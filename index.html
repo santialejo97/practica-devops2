@@ -1,86 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-/* Style the header */
-header {
-  background-color: black;
-  padding: 35px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+      /* Style the header */
+      header {
+        background-color: black;
+        padding: 35px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
 
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      /* Clear floats after the columns */
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-/* Style the footer */
-footer {
-  background: #D38312;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 10px;
-  text-align: center;
-}
+      /* Style the footer */
+      footer {
+        background: #d38312; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #a83279,
+          #d38312
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #a83279,
+          #d38312
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 10px;
+        text-align: center;
+      }
 
-nav > ul > li {
-    margin: 10px;
-}
+      nav > ul > li {
+        margin: 10px;
+      }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Versionamiento de código con GitHub</h2>
+    </header>
 
-</style>
-</head>
-<body>
-
-<header>
-  <h2>Versionamiento de código con GitHub</h2>
-</header>
-
-
-</body>
+    <div id="body">
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">Git</a></li>
+            <li><a href="#">SCM</a></li>
+            <li><a href="#">Gitflow</a></li>
+          </ul>
+        </nav>
+        <article>
+          <h1>Contenido</h1>
+          <p>
+            La capacidad de "ramificar" o de trabajar en BRANCH en sistemas de
+            control de versiones se creó principalmente para permitir a los
+            desarrolladores trabajasen en diferentes partes del sistema de
+            software en paralelo.
+          </p>
+          <p>
+            Sin el riesgo de que los desarrolladores individuales verificaren
+            cambios que podrían desestabilizar el trabajo o incluso de
+            introducir errores en el TRUNK (o maestro o mainline).
+          </p>
+        </article>
+      </section>
+    </div>
+  </body>
 </html>
